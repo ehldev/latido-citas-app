@@ -49,15 +49,14 @@
             width: 100%;
             min-height: 300px;
             /* border: 1px solid tomato; */
-            position: absolute;
-            bottom: -420px;
             opacity: .7;
         }
 
         @media (min-width: 768px) {
             .bg {
                 min-height: 400px;
-                bottom: -380px;
+                position: absolute;
+                bottom: -350px;
             }
         }
     </style>
@@ -66,7 +65,7 @@
 <body class="bg-app-bg min-h-screen">
 
     <div class="flex items-center justify-center p-6">
-        <div class="bg"></div>
+        <div class="bg hidden md:block"></div>
 
         <div class="w-full container flex flex-col lg:flex-row rounded-[3rem] overflow-hidden">
 
@@ -94,7 +93,7 @@
 
                     <img src="./mobile-image.png" alt="" class="md:hidden">
 
-                    <h1 class="font-bold text-4xl md:text-6xl text-app-dark leading-tight mt-6 md:mt-0 mb-6">
+                    <h1 class="font-heading text-4xl md:text-6xl text-app-dark leading-tight mt-6 md:mt-0 mb-6">
                         Toma la oportunidad de amar y ser amado
                     </h1>
                     <p class="text-gray-500 text-lg">
@@ -149,7 +148,9 @@
 
             </div>
         </div>
+    </div>
 
+    <div class="bg"></div>
 </body>
 
 </html>
