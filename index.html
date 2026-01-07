@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveDate - Registro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'app-primary': '#FF4B6E',
+                        'app-dark': '#111827',
+                        'app-bg': '#FDFDFD',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .font-heading {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Estilo para los círculos concéntricos del diseño visual */
+        .radar-circle {
+            border: 1px dashed #FF4B6E55;
+            border-radius: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .bg {
+            background-image: url('https://lovedate.jwsuperthemes.com/wp-content/uploads/2024/07/Background-Member-min.png');
+            background-size: cover;
+            width: 100%;
+            min-height: 300px;
+            /* border: 1px solid tomato; */
+            position: absolute;
+            bottom: -420px;
+            opacity: .7;
+        }
+
+        @media (min-width: 768px) {
+            .bg {
+                min-height: 400px;
+                bottom: -380px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-app-bg min-h-screen">
+
+    <div class="flex items-center justify-center p-6">
+        <div class="bg"></div>
+
+        <div class="w-full container flex flex-col lg:flex-row rounded-[3rem] overflow-hidden">
+
+            <div
+                class="lg:w-1/2 md:p-12 relative flex flex-col md:justify-center items-center lg:items-start overflow-hidden">
+
+                <!-- <div class="absolute inset-0 pointer-events-none">
+                <div class="radar-circle w-[300px] h-[300px]"></div>
+                <div class="radar-circle w-[500px] h-[500px]"></div>
+                
+                <img src="https://i.pravatar.cc/150?u=1" class="absolute top-[20%] left-[30%] w-16 h-16 rounded-full border-4 border-white shadow-lg object-cover" alt="User">
+                <img src="https://i.pravatar.cc/150?u=2" class="absolute bottom-[25%] left-[20%] w-14 h-14 rounded-full border-4 border-white shadow-lg object-cover" alt="User">
+                <img src="https://i.pravatar.cc/150?u=3" class="absolute top-[45%] right-[15%] w-20 h-20 rounded-full border-4 border-white shadow-lg object-cover" alt="User">
+                
+                <div class="absolute bottom-[35%] right-[25%] bg-app-primary text-white p-3 rounded-2xl shadow-lg transform rotate-12">
+                    <i class="ri-chat-3-line text-xl"></i>
+                </div>
+            </div> -->
+
+                <div class="relative z-10">
+                    <div class="flex items-center gap-2 text-app-primary mb-6">
+                        <i class="ri-heart-3-fill text-4xl"></i>
+                        <span class="text-3xl font-bold tracking-tight text-app-dark">Latido.pe</span>
+                    </div>
+
+                    <img src="./mobile-image.png" alt="" class="md:hidden">
+
+                    <h1 class="font-bold text-4xl md:text-6xl text-app-dark leading-tight mt-6 md:mt-0 mb-6">
+                        Toma la oportunidad de amar y ser amado
+                    </h1>
+                    <p class="text-gray-500 text-lg">
+                        Ideal para gente que quiere conversar <span class="text-app-primary">sin
+                            filtros</span>.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="lg:w-1/2 mt-16 md:mt-0 md:p-12 lg:p-20 flex flex-col justify-center bg-white lg:border-l border-gray-100">
+
+                <div class="mb-6 md:mb-12">
+                    <h2 class="text-3xl font-bold text-app-dark md:mb-2">¡Regístrate gratis!</h2>
+                    <p class="text-gray-400 hidden md:block">Una app simple: perfil, fotos y chat directo.</p>
+                </div>
+
+                <div class="space-y-4">
+
+                    <button
+                        class="w-full flex items-center justify-center gap-4 py-4 bg-[#1877F2] text-white rounded-2xl hover:bg-[#166fe5] active:scale-[0.98] transition-all font-semibold text-lg shadow-lg shadow-blue-200/50">
+                        <i class="ri-facebook-circle-fill text-2xl"></i>
+                        <span>Continuar con Facebook</span>
+                    </button>
+
+                    <button
+                        class="w-full flex items-center justify-center gap-4 py-4 bg-white border-2 border-gray-100 text-gray-700 rounded-2xl hover:border-gray-200 hover:bg-gray-50 active:scale-[0.98] transition-all font-semibold text-lg shadow-sm">
+                        <i class="ri-google-fill text-2xl text-[#EA4335]"></i>
+                        <span>Continuar con Google</span>
+                    </button>
+
+                </div>
+
+                <div class="mt-10 text-center">
+                    <p class="text-gray-400">Tus redes sociales no se sincronizarán con la app, solo la usamos para
+                        iniciar sesión.</p>
+                    <!-- <p class="text-gray-500">¿Ya tienes una cuenta? <a href="#" class="text-app-primary font-bold hover:underline">Log In</a></p> -->
+                    <!-- <div class="mt-8 pt-8 border-t border-gray-50">
+                    <button class="text-gray-400 hover:text-app-primary flex items-center justify-center gap-2 mx-auto transition-colors">
+                        <i class="ri-mail-line"></i>
+                        Registrarse con correo electrónico
+                    </button>
+                </div> -->
+                </div>
+
+                <div class="mt-12 text-center text-gray-400 text-[11px]">
+                    Al registrarte, aceptas nuestros
+                    <a href="#" class="text-app-primary hover:underline">Términos y Condiciones</a>
+                    y la
+                    <a href="#" class="text-app-primary hover:underline">Política de Privacidad</a>.
+                </div>
+
+            </div>
+        </div>
+
+</body>
+
+</html>
