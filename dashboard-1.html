@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Remix Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <title>Romio - Matches</title>
+  </head>
+
+  <body class="bg-neutral-50 text-neutral-900">
+    <div class="min-h-dvh">
+      <!-- Header -->
+      <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-neutral-100">
+        <div class="mx-auto container px-4 sm:px-6">
+          <div class="py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <div class="w-9 h-9 rounded-full bg-pink-50 flex items-center justify-center">
+                <i class="ri-heart-3-fill text-pink-500 text-lg"></i>
+              </div>
+              <div class="leading-tight">
+                <h1 class="text-lg font-semibold">Latido.pe</h1>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <button
+                class="w-10 h-10 rounded-full bg-neutral-100 flex items-center justify-center active:scale-95 transition"
+                aria-label="Filtros"
+                title="Filtros"
+              >
+                <i class="ri-equalizer-2-line text-neutral-700 text-lg"></i>
+              </button>
+              <button
+                class="w-10 h-10 rounded-full bg-neutral-100 flex items-center justify-center active:scale-95 transition"
+                aria-label="Ajustes"
+                title="Ajustes"
+              >
+                <i class="ri-settings-3-line text-neutral-700 text-lg"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Search -->
+          <!-- <div class="pb-4">
+            <label class="relative block">
+              <span class="absolute inset-y-0 left-3 flex items-center">
+                <i class="ri-search-line text-neutral-400"></i>
+              </span>
+              <input
+                type="text"
+                placeholder="Buscar"
+                class="w-full rounded-2xl bg-neutral-100 pl-10 pr-4 py-3 text-sm outline-none focus:ring-2 focus:ring-pink-200"
+              />
+            </label>
+          </div> -->
+        </div>
+      </header>
+
+      <!-- Content -->
+      <main class="mx-auto container px-4 sm:px-6">
+        <div class="py-6 pb-24">
+          <!-- Grid cards (como tu imagen) -->
+          <section
+            class="grid gap-4
+                   grid-cols-3
+                   sm:grid-cols-4
+                   lg:grid-cols-5"
+          >
+            <!-- Card -->
+            <a href="detalle-usuario.html"
+              class="group block"
+              aria-label="Kimico Joi"
+            >
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
+                  alt="Kimico Joi"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Kimico Joi</p>
+            </a>
+
+            <a href="detalle-usuario.html" class="group block" aria-label="Sansa Stark">
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=900&q=80"
+                  alt="Sansa Stark"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Sansa Stark</p>
+            </a>
+
+            <a href="detalle-usuario.html" class="group block" aria-label="Annie Bansal">
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=900&q=80"
+                  alt="Annie Bansal"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Annie Bansal</p>
+            </a>
+
+            <a href="detalle-usuario.html" class="group block" aria-label="Jiya Khalifa">
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=900&q=80"
+                  alt="Jiya Khalifa"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Jiya Khalifa</p>
+            </a>
+
+            <a href="detalle-usuario.html" class="group block" aria-label="Tima Luciya">
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?auto=format&fit=crop&w=900&q=80"
+                  alt="Tima Luciya"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Tima Luciya</p>
+            </a>
+
+            <a href="#" class="group block" aria-label="Mili Domica">
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80"
+                  alt="Mili Domica"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Mili Domica</p>
+            </a>
+
+            <a href="#" class="group block" aria-label="Cercy Lennister">
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=900&q=80"
+                  alt="Cercy Lennister"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Cercy Lennister</p>
+            </a>
+
+            <a href="#" class="group block" aria-label="Arya Stark">
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=900&q=80"
+                  alt="Arya Stark"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Arya Stark</p>
+            </a>
+
+            <a href="#" class="group block" aria-label="Jimmy York">
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?auto=format&fit=crop&w=900&q=80"
+                  alt="Jimmy York"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Jimmy York</p>
+            </a>
+
+            <!-- Duplica cards para más contenido -->
+            <a href="#" class="group block" aria-label="Nina Ray">
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80"
+                  alt="Nina Ray"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Nina Ray</p>
+            </a>
+
+            <a href="#" class="group block" aria-label="Lia Moore">
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1520975958225-5c91f8e99286?auto=format&fit=crop&w=900&q=80"
+                  alt="Lia Moore"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Lia Moore</p>
+            </a>
+
+            <a href="#" class="group block" aria-label="Maya Cruz">
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80"
+                  alt="Maya Cruz"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Maya Cruz</p>
+            </a>
+
+            <a href="#"
+              class="group block"
+              aria-label="Kimico Joi"
+            >
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
+                  alt="Kimico Joi"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Kimico Joi</p>
+            </a>
+
+            <a href="#" class="group block" aria-label="Sansa Stark">
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=900&q=80"
+                  alt="Sansa Stark"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Sansa Stark</p>
+            </a>
+
+            <a href="#" class="group block" aria-label="Annie Bansal">
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=900&q=80"
+                  alt="Annie Bansal"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Annie Bansal</p>
+            </a>
+
+            <a href="#" class="group block" aria-label="Jiya Khalifa">
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=900&q=80"
+                  alt="Jiya Khalifa"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Jiya Khalifa</p>
+            </a>
+
+            <a href="#" class="group block" aria-label="Tima Luciya">
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?auto=format&fit=crop&w=900&q=80"
+                  alt="Tima Luciya"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Tima Luciya</p>
+            </a>
+            <a href="#"
+              class="group block"
+              aria-label="Kimico Joi"
+            >
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
+                  alt="Kimico Joi"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Kimico Joi</p>
+            </a>
+
+            <a href="#" class="group block" aria-label="Sansa Stark">
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=900&q=80"
+                  alt="Sansa Stark"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Sansa Stark</p>
+            </a>
+
+            <a href="#" class="group block" aria-label="Annie Bansal">
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=900&q=80"
+                  alt="Annie Bansal"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Annie Bansal</p>
+            </a>
+
+            <a href="#" class="group block" aria-label="Jiya Khalifa">
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=900&q=80"
+                  alt="Jiya Khalifa"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Jiya Khalifa</p>
+            </a>
+
+            <a href="#" class="group block" aria-label="Tima Luciya">
+              <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-sm border border-neutral-100 bg-neutral-100">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+                  src="https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?auto=format&fit=crop&w=900&q=80"
+                  alt="Tima Luciya"
+                />
+              </div>
+              <p class="mt-2 text-xs sm:text-sm font-semibold truncate">Tima Luciya</p>
+            </a>
+          </section>
+        </div>
+      </main>
+
+      <!-- Bottom nav -->
+      <nav class="fixed bottom-0 inset-x-0 z-50 bg-white border-t border-neutral-100">
+        <div class="mx-auto max-w-xl px-6 py-3">
+          <div class="flex items-center justify-between">
+            <button class="flex flex-col items-center gap-1 text-neutral-500 hover:text-neutral-900" aria-label="Inicio">
+              <i class="ri-home-5-line text-xl"></i>
+              <span class="text-[11px]">Inicio</span>
+            </button>
+
+            <button class="flex flex-col items-center gap-1 text-pink-600" aria-label="Matches">
+              <i class="ri-compass-3-fill text-xl"></i>
+              <span class="text-[11px] font-semibold">Matches</span>
+            </button>
+
+            <button class="flex flex-col items-center gap-1 text-neutral-500 hover:text-neutral-900" aria-label="Likes">
+              <i class="ri-heart-3-line text-xl"></i>
+              <span class="text-[11px]">Likes</span>
+            </button>
+
+            <a href="chat.html" class="flex flex-col items-center gap-1 text-neutral-500 hover:text-neutral-900" aria-label="Chats">
+              <i class="ri-chat-3-line text-xl"></i>
+              <span class="text-[11px]">Chats</span>
+            </a>
+
+            <button class="flex flex-col items-center gap-1 text-neutral-500 hover:text-neutral-900" aria-label="Perfil">
+              <i class="ri-user-3-line text-xl"></i>
+              <span class="text-[11px]">Perfil</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
